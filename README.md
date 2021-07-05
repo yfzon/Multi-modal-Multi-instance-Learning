@@ -62,3 +62,9 @@ Combine the features of all Patches within each WSI into a single file to reduce
 ```bash
 python3 preprocessing/merge_patch_feat.py
 ```
+
+## Disclaimer
+
+This tool is for research purpose and not approved for clinical use.
+
+This is not an official Tencent product.
