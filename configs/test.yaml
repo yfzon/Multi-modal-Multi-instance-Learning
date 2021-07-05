@@ -1,0 +1,53 @@
+dataset:
+  name: 'mil-multi-modal-x20'
+  df_path: './sampledata/sample_tabnet_feat.csv'
+  tab_data_path: './sampledata/sample.pickle'
+
+  scale1_feat_root: './sampledata'
+  scale2_feat_root: './sampledata'
+  scale3_feat_root: './sampledata'
+  select_scale: 0
+
+
+
+
+
+model:
+  arch: "attention-fusion-net"
+
+  input_dim: 1280
+  attention_dim: 256
+  attention_out_dim: 1
+  instance_attention_layers: 1
+  feature_attention_layers: 1
+  feature_represent_layers: 1
+  num_modal: 4
+  use_tabnet: true
+
+
+
+
+
+train:
+  batch_size_per_gpu: 1
+  num_epoch: 240
+  start_epoch: 241
+  epoch_iters: 5000
+  optim: "Adam"
+  lr: 0.02
+  lr_pow: 0.9
+  beta1: 0.9
+  weight_decay: 1e-3
+  fix_bn: False
+  workers: 8
+  disp_iter: 200
+  seed: 304
+
+
+test:
+  checkpoint: "./checkpoints/model_epoch_171.pth"
+  result: "./"
+
+save_dir: "./results"
+
+local_rank: -1
