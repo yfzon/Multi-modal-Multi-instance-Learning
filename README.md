@@ -3,11 +3,22 @@
 
 
 This repository is an official PyTorch implementation of the paper 
-**"Multi-modal Multi-instance Learning using Weakly Correlated Histopathological Images and Tabular Clinical Information"** [paper]() 
+**"Multi-modal Multi-instance Learning using Weakly Correlated Histopathological Images and Tabular Clinical Information"** [paper](https://link.springer.com/chapter/10.1007/978-3-030-87237-3_51) 
 from **MICCAI 2021**.
 
 ![](./figs/arch.png)
 
+## Citation
+```bibtex
+@inproceedings{li2021multi,
+  title={Multi-modal Multi-instance Learning Using Weakly Correlated Histopathological Images and Tabular Clinical Information},
+  author={Li, Hang and Yang, Fan and Xing, Xiaohan and Zhao, Yu and Zhang, Jun and Liu, Yueping and Han, Mengxue and Huang, Junzhou and Wang, Liansheng and Yao, Jianhua},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={529--539},
+  year={2021},
+  organization={Springer}
+}
+```
 ## Installation
 ### Dependencies
 * Python 3.6
